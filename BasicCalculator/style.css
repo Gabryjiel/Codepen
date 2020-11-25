@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.title{
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: 7%;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #333;
+  width: 50vw;
+  height: 90vh;
+  min-width: 400px;
+  min-height: 650px;
+  border: 5px solid black;
+  border-radius: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.display {
+  background: darkgreen;
+  border: 1px solid black;
+  width: 90%;
+  height: 20%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 5.5vw;
+  font-family: "courier";
+  font-weight: bolder;
+}
+
+.operator{
+    color: darkgreen;
+    background-color: black;
+    position: absolute;
+    font-size: 2vw;
+    align-self: flex-start;
+}
+
+.keyboard {
+  margin: 40px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-template-rows: repeat(7, 1fr);
+  width: 90%;
+  height: 90%;
+  font-size: 32px;
+}
+
+.keyboard div {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.keyboard div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 3px #ccc;
+}
+
+.red {
+  background: #e33 !important;
+}
+
+.blue {
+    background-color: darkturquoise !important;
+}
+
+.green {
+    background-color: forestgreen !important;
+    grid-column: 5 / 3;
+}
